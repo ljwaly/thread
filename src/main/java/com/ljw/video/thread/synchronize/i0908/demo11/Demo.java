@@ -18,9 +18,9 @@ public class Demo {
 
     public void test(){
         for (int i = 0; i < 10000; i++) {
-            if(count.get() < 1000){
+            if(count.get() < 1000){//临界区：2个操作是第一个操作,
                 //count++
-                count.incrementAndGet();
+                count.incrementAndGet();//临界区：2个操作是第二一个操作,cas这个操作是原子性的
             }
         }
     }

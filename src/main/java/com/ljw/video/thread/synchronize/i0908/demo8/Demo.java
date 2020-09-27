@@ -34,7 +34,10 @@ public class Demo {
         log.debug("test start...");
         boolean flag =running;
             while (running){
-
+            	String ab = "11";
+            	String cdString = "dfa";
+            	String c = ab +cdString;
+            
             }
         log.debug("test end...");
     }
